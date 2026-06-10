@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CognOSS - Open Cognitive Operating System</title>
+    <meta
+      name="description"
+      content="CognOSS is an open cognitive operating system: private cognitive clothing, protocol-guided agents, and networks of trusted coordination."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="CognOSS home">
+        <span class="brand-mark"></span>
+        <span>CognOSS</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#individuality">Individuality</a>
+        <a href="#united">United</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#join">Join</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Next Gen OS | Next Gen OSS</p>
+          <h1>Open Cognitive Operating System</h1>
+          <p class="hero-lead">
+            Yours. Private. Care. CognOSS is cognitive clothing: a personal AI layer
+            that extends your rationality instead of replacing it.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#join">Join core team</a>
+            <a class="button secondary" href="#architecture">See architecture</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="CognOSS concept card">
+          <div class="card-glow"></div>
+          <div class="stack-preview">
+            <div class="stack-row human">You</div>
+            <div class="stack-row cognitive">Cognitive layer</div>
+            <div class="stack-row bridge">Protocol bridge</div>
+            <div class="stack-row linux">Linux | GrapheneOS</div>
+          </div>
+          <p>
+            A local self-image, protocol-governed agents, and an open path from
+            individual sovereignty to trusted collective intelligence.
+          </p>
+        </div>
+      </section>
+
+      <section class="question section">
+        <div class="section-heading center">
+          <p class="eyebrow">The question</p>
+          <h2>It or we?</h2>
+          <p>
+            Life as a slave of machinery, or machinery as the extension of life?
+          </p>
+        </div>
+
+        <div class="choice-grid">
+          <article class="choice-card bad">
+            <img src="./imgs/machinery.png" alt="Pyramid of sad gears" />
+            <div>
+              <h3>Machinery over life</h3>
+              <p>
+                Optimization systems turn people into cogs. The more they know
+                about us, the easier it becomes to steer us.
+              </p>
+            </div>
+          </article>
+
+          <article class="choice-card good">
+            <img src="./imgs/life.png" alt="Warm network of smiling neurons" />
+            <div>
+              <h3>Machinery as life extension</h3>
+              <p>
+                AI becomes cognitive clothing: close to the body, owned by the
+                wearer, serving awareness, agency, and care.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="individuality" class="word-divider individuality-divider" aria-label="Individuality">        
+        <h2>INDIVIDUALITY</h2>
+        <p>Your self-image must belong to you before it can safely connect to others.</p>
+      </section>
+
+      <section class="section split">
+        <div class="section-heading">
+          <p class="eyebrow">Cognitive clothing</p>
+          <h2>Your cognitive twin must belong to you.</h2>
+          <p>
+            Whatever we call it - digital twin, cognitive twin, second brain, or
+            user model - it will know almost everything about you. If somebody
+            else owns it, they own a new level of leverage over your mind.
+          </p>
+        </div>
+
+        <div class="feature-list">
+          <article class="feature">
+            <span class="feature-icon">01</span>
+            <h3>Cognitive clothing</h3>
+            <p>
+              Keep the self-image locally on devices you trust. CognOSS is not a
+              rented assistant; it is an extension you wear.
+            </p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon">02</span>
+            <h3>Cognitive sovereignty</h3>
+            <p>
+              Constant AI use can quietly steal judgment. CognOSS is designed to
+              help you stay conscious of yourself and your reasons.
+            </p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon">03</span>
+            <h3>Productivity without surrender</h3>
+            <p>
+              Use automation, planning, execution, and skills - while the system
+              keeps the user model, policies, and agency under your control.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="united" class="word-divider united-divider" aria-label="United">        
+        <h2>UNITED</h2>
+        <p>Once the individual is protected, connection can become coordination without surrender.</p>
+      </section>
+
+      <section class="section united">
+        <div class="section-heading center">
+          <p class="eyebrow">Protocol networks</p>
+          <h2>Single is ok. United is much better.</h2>
+          <p>
+            Imagine a network of CognOSS instances reflecting social reality:
+            autonomous people, trusted protocols, and shared clarity without a
+            central platform owning the relationship.
+          </p>
+        </div>
+
+        <div class="reagent-panel">
+          <figure>
+            <img
+              src="./imgs/reagent-protocol-state-machines.png"
+              alt="Reagent protocol compiled into local state machines"
+            />
+          </figure>
+          <div class="protocol-code-card">
+            <h3>Protocol-guided communication</h3>
+            <p>
+              How do we trust agents communicating with each other without a
+              central platform governance? Reagent defines the network
+              chemistry: a readable protocol compiles into role-specific state
+              machines.
+            </p>
+            <pre><code>protocol AskAboutBob {
+  participants:
+    alice initiator,
+    aliceAgent single static,
+    bobAgent single static,
+    bob single auto
+
+  trigger on invoke with AskAboutBob {
+    resolve bobAgent =
+      all | filter(name == "Bob Agent")
+  }
+
+  alice --> aliceAgent: AskAboutBob
+  aliceAgent --> bobAgent: RequestAboutBob
+  bobAgent --> bob: AskConsent
+
+  alt at bobAgent
+    (bob --> bobAgent: ConsentGranted) {
+      bobAgent --> aliceAgent: BobStatusReport
+      aliceAgent --> alice: BobStatusResponse
+  } else
+    (bob --> bobAgent: ConsentDeclined) {
+      bobAgent --> aliceAgent: RequestDeclined
+      aliceAgent --> alice: RequestDeclined
+  }
+}</code></pre>
+            <p class="tagline">Trusted networks driven by protocols.</p>
+          </div>
+        </div>
+
+        <div class="section-heading protocol-examples-heading">
+          <p class="eyebrow">Protocol examples</p>
+          <h2>What societies can we build?</h2>
+        </div>
+
+        <div class="protocol-grid">
+          <article>
+            <h3>Managed privacy</h3>
+            <p>Share exactly the data needed for communication, then remove it when it is no longer needed.</p>
+          </article>
+          <article>
+            <h3>Collective vision of reality</h3>
+            <p>Share observations between CognOSS instances, detect fakes, and make reality clearer.</p>
+          </article>
+          <article>
+            <h3>Collective vision of us</h3>
+            <p>Anonymous, hard-to-manipulate social sensing for trustworthy sociology.</p>
+          </article>
+          <article>
+            <h3>Collective decisions</h3>
+            <p>Voting and coordination protocols grounded in a clearer picture of reality.</p>
+          </article>
+          <article>
+            <h3>Safe connectivity</h3>
+            <p>Find better matches and meaningful connections, not just retention and monetization.</p>
+          </article>
+        </div>
+
+        <div class="network-panel build-networks-panel">
+          <img src="./imgs/network.png" alt="Different topologies of warm human networks" />
+          <div class="network-copy">
+            <p class="eyebrow">Build your networks</p>
+            <h3>Different topologies for different kinds of trust.</h3>
+            <p>
+              A CognOSS network can be a pair, a circle, a mesh, a temporary
+              working group, or a public protocol. The important part is that
+              coordination is explicit and inspectable.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture" class="section architecture">
+        <div class="section-heading center">
+          <p class="eyebrow">Architecture</p>
+          <h2>Linux below. Cognition above. Protocols in between.</h2>
+          <p>
+            CognOSS does not modify the Linux kernel. It runs as userspace
+            processes: a deterministic microkernel, cognitive angels, isolated
+            aspects, and a self-image graph guarded by protocol capabilities.
+          </p>
+        </div>
+
+        <figure class="architecture-figure">
+          <img src="./imgs/cognos-architecture.png" alt="CognOSS layered architecture diagram" />
+          <figcaption>
+            Draft architecture: Ring 0 Linux, Ring 1 cognitive microkernel,
+            Ring 2 core angels, Ring 3 aspects and external agents.
+          </figcaption>
+        </figure>
+
+        <div class="architecture-points">
+          <article>
+            <h3>Self Image</h3>
+            <p>
+              BSI, DSI, and AFG represent the current self, desired self, and
+              tensions that become work.
+            </p>
+          </article>
+          <article>
+            <h3>Protocol = Capability</h3>
+            <p>
+              If a transition is not in the protocol state machine, the agent
+              cannot perform it.
+            </p>
+          </article>
+          <article>
+            <h3>Aspects</h3>
+            <p>
+              Domain packages add protocols, agents, skills, policies, and
+              isolated software without polluting the host.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section roadmap">
+        <div class="section-heading">
+          <p class="eyebrow">Roadmap</p>
+          <h2>From PoC to open cognitive infrastructure.</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <span>01</span>
+            <div>
+              <h3>PoC</h3>
+              <p>Build the first usable cognitive clothing: local self-image, core angels, and protocol runtime.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <h3>Core team</h3>
+              <p>Bring together systems engineers, AI builders, designers, and people who care about sovereignty.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <h3>OSS process bootstrap</h3>
+              <p>Turn the project into a durable open-source process with public protocols and real contributors.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="join" class="join section">
+        <div>
+          <p class="eyebrow">Join us</p>
+          <h2>Help build machinery that extends life.</h2>
+          <p>
+            We are looking for people who want personal AI to be open, local,
+            private, protocol-governed, and oriented toward care.
+          </p>
+        </div>
+        <div class="join-actions">
+          <a class="button primary" href="mailto:hello@cognos.local">Join Team</a>
+          <a class="button secondary" href="mailto:hello@cognos.local?subject=I%20want%20to%20use%20CognOSS">I want to use it</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>CognOSS draft landing</span>
+      <span>Open Cognitive Operating System</span>
+    </footer>
+  </body>
+</html>
