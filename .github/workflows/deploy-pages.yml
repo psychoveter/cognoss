@@ -5,7 +5,9 @@ on:
     branches:
       - main
     paths:
-      - "landing/**"
+      - "landing/v1/**"
+      - "landing/CNAME"
+      - "landing/.nojekyll"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
