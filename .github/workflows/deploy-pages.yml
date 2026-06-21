@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "landing/v1/**"
+      - "landing/v2_en/**"
       - "landing/CNAME"
       - "landing/.nojekyll"
       - ".github/workflows/deploy-pages.yml"

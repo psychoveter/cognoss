@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#171b23" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L13,7 L1,13 Z" fill="#171b23"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L13,7 L1,13 Z" fill="#c78a24"/>
+    </marker>
+    <style>
+      .bg { fill: #f6f0eb; }
+      .paper { fill: #fffaf1; stroke: #171b23; stroke-width: 2.6; }
+      .paperSoft { fill: rgba(255, 255, 255, 0.68); stroke: rgba(23, 27, 35, 0.22); stroke-width: 2; }
+      .dark { fill: #111111; }
+      .gold { fill: #f2b84b; }
+      .line { stroke: #171b23; stroke-width: 3.2; fill: none; marker-end: url(#arrow); }
+      .lineNoArrow { stroke: #171b23; stroke-width: 3.2; fill: none; }
+      .lineGold { stroke: #c78a24; stroke-width: 3; fill: none; marker-end: url(#arrowGold); }
+      .boundary { stroke: #171b23; stroke-width: 2.2; stroke-dasharray: 3 10; stroke-linecap: round; }
+      .title { font: 700 46px Cambria, Georgia, serif; fill: #171b23; letter-spacing: -1px; }
+      .label { font: 700 22px "Courier New", monospace; fill: #171b23; letter-spacing: 0.2px; }
+      .labelSmall { font: 700 14px "Courier New", monospace; fill: #777; letter-spacing: 1.6px; text-transform: uppercase; }
+      .boxText { font: 700 28px Cambria, Georgia, serif; fill: #171b23; }
+      .boxTextSmall { font: 700 20px Cambria, Georgia, serif; fill: #171b23; }
+      .muted { font: 600 18px Calibri, Arial, sans-serif; fill: #596171; }
+      .tiny { font: 700 13px "Courier New", monospace; fill: #777; letter-spacing: 1px; text-transform: uppercase; }
+      .tokenText { font: 800 18px "Courier New", monospace; fill: #fffaf1; }
+      .tokenTextDark { font: 800 18px "Courier New", monospace; fill: #171b23; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1440" height="960"/>
+
+  <text class="labelSmall" x="70" y="58">CognOSS Architecture</text>
+  <text class="title" x="70" y="108">Exomind as a controlled layer above life APIs</text>
+
+  <!-- left layer labels -->
+  <text class="label" x="70" y="195">Presentation Layer</text>
+  <text class="label" x="70" y="372">Personal Memory Layer</text>
+  <text class="label" x="70" y="548">Integration Layer</text>
+
+  <!-- central product stack -->
+  <g filter="url(#shadow)">
+    <rect class="paper" x="455" y="150" width="470" height="78" rx="18"/>
+  </g>
+  <text class="boxText" x="528" y="199">Personal Generative UI</text>
+
+  <g filter="url(#shadow)">
+    <rect class="paper" x="432" y="322" width="520" height="98" rx="22"/>
+  </g>
+  <text class="boxText" x="563" y="381">User Life Model</text>
+
+  <g filter="url(#shadow)">
+    <rect class="paper" x="325" y="510" width="330" height="55" rx="9"/>
+    <rect class="paper" x="720" y="510" width="330" height="55" rx="9"/>
+  </g>
+  <text class="boxTextSmall" x="431" y="546">Actions out</text>
+  <text class="boxTextSmall" x="842" y="546">Signals in</text>
+
+  <!-- arrows between stack elements -->
+  <path class="line" d="M595 229 L590 315"/>
+  <path class="line" d="M770 315 L765 232"/>
+  <path class="line" d="M520 420 C495 460 474 480 456 507"/>
+  <path class="line" d="M856 507 C830 470 816 448 805 422"/>
+
+  <!-- data list -->
+  <text class="boxTextSmall" x="1092" y="175">Map of reality</text>
+  <text class="muted" x="1092" y="300">Psychological &amp; health data</text>
+  <text class="muted" x="1092" y="340">Projects data</text>
+  <text class="muted" x="1092" y="380">Info channels</text>
+  <text class="muted" x="1092" y="420">Other life spheres</text>
+  <path class="lineGold" d="M1054 170 C1005 170 970 190 926 223"/>
+  <path class="lineGold" d="M1054 330 C1007 330 988 342 954 358"/>
+
+  <!-- boundary -->
+  <line class="boundary" x1="220" y1="605" x2="1220" y2="605"/>
+  <rect class="bg" x="575" y="581" width="245" height="46"/>
+  <text class="tiny" x="611" y="611">EXOMIND BOUNDARY</text>
+
+  <!-- external services -->
+  <text class="labelSmall" x="342" y="704">API</text>
+  <text class="labelSmall" x="872" y="704">API</text>
+
+  <g>
+    <circle cx="420" cy="664" r="28" fill="#18a7a0"/>
+    <text class="tokenText" x="407" y="671">TG</text>
+    <rect x="285" y="694" width="58" height="40" rx="10" fill="#d64b3f"/>
+    <text class="tokenText" x="303" y="721">M</text>
+    <circle cx="510" cy="735" r="31" fill="#111111"/>
+    <text class="tokenText" x="489" y="742">GH</text>
+    <path class="lineGold" d="M493 654 C548 642 588 642 635 658"/>
+    <circle cx="600" cy="660" r="31" fill="#f2b84b"/>
+    <text class="tokenTextDark" x="583" y="667">AI</text>
+    <rect x="676" y="692" width="52" height="58" rx="9" fill="#1b74d2"/>
+    <text class="tokenText" x="693" y="726">D</text>
+    <rect x="775" y="708" width="62" height="42" rx="8" fill="#fffaf1" stroke="#171b23" stroke-width="2"/>
+    <text class="tokenTextDark" x="793" y="735">BK</text>
+    <rect x="928" y="698" width="60" height="54" rx="11" fill="#111111"/>
+    <text class="tokenText" x="944" y="731">IDE</text>
+    <circle cx="1034" cy="682" r="33" fill="#f2b84b"/>
+    <circle cx="1034" cy="682" r="21" fill="#2f7de1"/>
+    <circle cx="1034" cy="682" r="10" fill="#18a7a0"/>
+    <circle cx="1130" cy="735" r="34" fill="#24d366"/>
+    <text class="tokenText" x="1110" y="742">WA</text>
+  </g>
+
+  <!-- subtle integration traces -->
+  <path class="lineNoArrow" d="M489 567 C465 595 442 618 420 642" stroke-dasharray="8 10" opacity="0.45"/>
+  <path class="lineNoArrow" d="M885 566 C928 606 975 636 1034 660" stroke-dasharray="8 10" opacity="0.45"/>
+  <path class="lineNoArrow" d="M490 567 C565 628 642 655 704 692" stroke-dasharray="8 10" opacity="0.35"/>
+  <path class="lineNoArrow" d="M886 566 C834 632 798 675 806 708" stroke-dasharray="8 10" opacity="0.35"/>
+
+  <!-- OS base -->
+  <g filter="url(#shadow)">
+    <rect class="paper" x="330" y="830" width="780" height="64" rx="13"/>
+  </g>
+  <text class="boxTextSmall" x="600" y="871">Operating System</text>
+  <text class="labelSmall" x="70" y="812">Local first | user owned | inspectable</text>
+
+  <!-- OS to APIs -->
+  <path class="lineNoArrow" d="M720 830 C720 794 718 766 710 748" stroke-dasharray="8 10" opacity="0.35"/>
+  <path class="lineNoArrow" d="M842 830 C852 788 880 755 929 724" stroke-dasharray="8 10" opacity="0.35"/>
+
+  <!-- note -->
+  <text class="muted" x="332" y="630">Apps, channels and institutions stay outside. CognOSS controls what crosses the boundary.</text>
+</svg>
