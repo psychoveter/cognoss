@@ -26,6 +26,8 @@
       .boxTextSmall { font: 700 20px Cambria, Georgia, serif; fill: #171b23; }
       .muted { font: 600 18px Calibri, Arial, sans-serif; fill: #596171; }
       .tiny { font: 700 13px "Courier New", monospace; fill: #777; letter-spacing: 1px; text-transform: uppercase; }
+      .boundaryText { font: 800 30px "Courier New", monospace; fill: #171b23; letter-spacing: 1.8px; text-transform: uppercase; }
+      .appLabel { font: 700 22px Calibri, Arial, sans-serif; fill: #596171; }
       .tokenText { font: 800 18px "Courier New", monospace; fill: #fffaf1; }
       .tokenTextDark { font: 800 18px "Courier New", monospace; fill: #171b23; }
     </style>
@@ -34,7 +36,6 @@
   <rect class="bg" width="1440" height="960"/>
 
   <text class="labelSmall" x="70" y="58">CognOSS Architecture</text>
-  <text class="title" x="70" y="108">Exomind as a controlled layer above life APIs</text>
 
   <!-- left layer labels -->
   <text class="label" x="70" y="195">Presentation Layer</text>
@@ -76,8 +77,8 @@
 
   <!-- boundary -->
   <line class="boundary" x1="220" y1="605" x2="1220" y2="605"/>
-  <rect class="bg" x="575" y="581" width="245" height="46"/>
-  <text class="tiny" x="611" y="611">EXOMIND BOUNDARY</text>
+  <rect class="bg" x="465" y="568" width="475" height="70"/>
+  <text class="boundaryText" x="495" y="615">EXOMIND BOUNDARY</text>
 
   <!-- external services -->
   <text class="labelSmall" x="342" y="704">API</text>
@@ -123,6 +124,6 @@
   <path class="lineNoArrow" d="M720 830 C720 794 718 766 710 748" stroke-dasharray="8 10" opacity="0.35"/>
   <path class="lineNoArrow" d="M842 830 C852 788 880 755 929 724" stroke-dasharray="8 10" opacity="0.35"/>
 
-  <!-- note -->
-  <text class="muted" x="332" y="630">Apps, channels and institutions stay outside. CognOSS controls what crosses the boundary.</text>
+  <!-- external surface label -->
+  <text class="appLabel" x="1060" y="638">applications, APIs</text>
 </svg>
